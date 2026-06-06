@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #090a0f;
+  --foreground: #f3f4f6;
+  --border: rgba(255, 255, 255, 0.08);
+  --card: rgba(17, 18, 26, 0.6);
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Glassmorphism Utility */
+.glass-panel {
+  background: rgba(17, 18, 26, 0.55);
+  backdrop-filter: blur(16px) saturate(140%);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(17, 18, 26, 0.7);
+  border-color: rgba(245, 158, 11, 0.3); /* Accent Amber hint */
+  box-shadow: 0 0 25px rgba(245, 158, 11, 0.08);
+}
+
+.glass-input {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #fff;
+  transition: all 0.2s ease;
+}
+
+.glass-input:focus {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(139, 92, 246, 0.5); /* Violet Accent */
+  outline: none;
+  box-shadow: 0 0 10px rgba(139, 92, 246, 0.15);
+}
+
+/* Sci-fi Architecture grid background effect */
+.grid-bg {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+.radial-glow {
+  background: radial-gradient(circle 800px at 50% 200px, rgba(139, 92, 246, 0.12), transparent 80%);
+}
+
+.glow-amber {
+  filter: drop-shadow(0 0 15px rgba(245, 158, 11, 0.3));
+}
+
+.glow-violet {
+  filter: drop-shadow(0 0 15px rgba(139, 92, 246, 0.3));
+}
+
+.glow-emerald {
+  filter: drop-shadow(0 0 15px rgba(16, 185, 129, 0.3));
+}
+
+/* Custom Webkit scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #090a0f;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}

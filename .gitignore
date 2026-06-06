@@ -1,0 +1,108 @@
+# General
+.DS_Store
+Thumbs.db
+# Logs
+*.log
+*.sqlite3
+# OS files
+ehthumbs.db
+Icon?
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+# C extensions
+*.so
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/versions etc.
+*.manifest
+*.spec
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+# Jupyter Notebook
+.ipynb_checkpoints
+# pyenv
+#   For a library or package, you might want to ignore these files specifically.
+#   But for an app, you want to ignore it.
+#   See https://github.com/pyenv/pyenv/wiki/Common-build-problems#custom-config
+#   if you need them.
+# pyenv virtualenv
+#   The virtual env does not need to be tracked.
+#   It's best practice to store the virtual environ
+#   elsewhere, or create it on the fly.
+#   This config is a common pattern.
+#   If you need your own env to be stored in repo,
+#   edit accordingly.
+#   By default, we ignore it.
+#   This line prevents .venv from being tracked.
+.venv/
+env/
+ENV/
+env.bak/
+# Environments
+#   Virtual envs created with venv
+#   Usually not committed.
+#   If you're using poetry:
+poetry.lock
+#   pipenv lock file for deterministic builds.
+Pipfile.lock
+# Secrets
+*.env
+.env.*
+# Node
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+pnpm-lock.yaml
+# Vite/Next.js build output (if used)
+/dist/
+/.next/
+/.nuxt/
+# Storybook
+storybook-static/
+# Misc
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+# Docker
+Dockerfile
+docker-compose.override.yml
+# Other
+*.iml
+*.swp
+*.swo
+# End of .gitignore
