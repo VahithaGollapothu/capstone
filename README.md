@@ -1,4 +1,4 @@
-# ArchGen AI
+  # ArchGen AI
 
 ArchGen AI is an AI-powered architectural design assistant.
 
